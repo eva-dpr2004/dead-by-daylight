@@ -1,0 +1,266 @@
+
+(function() {
+    // Dynamic values from page request
+    
+var script = document.getElementById("celtra-script-1");
+if (!script || script.tagName.toLowerCase() !== 'script')
+    throw 'Element with id equal to scriptId does not exist or is not a script.';
+  
+    var runtimeParams = {"tagVersion":"html-standard-7","deviceInfo":{"deviceType":"Desktop","primaryHardwareType":"desktop","mobileDevice":false,"osName":"Windows","osVersion":"10","platform":"DesktopPlatform","platformVersion":null,"browserName":"Edge","browserVersion":"107.0.1418.62","browserRenderingEngine":"Blink","vendor":null,"model":null},"weather":{"windy":"0","currentCondition":"fog","apparentTemperature":2.0,"temperature":2.0,"windSpeed":1,"cloudCoverage":100,"conditions":[{"name":"fog","weight":4},{"name":"cloudy","weight":0}]},"ipCountryCode":"FR","ipRegionCode":null,"ipPrincipalSubdivisionCode":"IDF","ipCityGeonameId":"2988507","ipCity":"Paris","ipPostalCode":"75018","ipLat":48.8323,"ipLng":2.4075,"accountId":"f7bc58a6","folderId":"fbcbf749","placementId":"1856987f","supplierId":"a6a4c073","sessionId":"s1670240199x8ef4540c535c11x41367267","purpose":"live","secure":1,"clientTimestamp":"1670238647.567","clientTimeZoneOffsetInMinutes":-60,"clientIp":"90.102.67.181","gpsLat":null,"gpsLng":null,"language":"fr","acceptLanguage":"fr,fr-FR;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6","platformAdvId":null,"platformAdvIdTrackingLimited":null,"userIdentifiers":{},"variantChoices":{"EventMetadata":"newMeta"},"neustarSegment":null,"authBasis":"1670240199644,fa661a15,1856987f","authToken":"07efeecba68559a781cc698c24f5303e","customAudiences":{},"derivedAudiences":{},"destinationDefinitions":[{"campaignId":null,"placementId":"1856987f","creativeId":null,"eventName":"urlOpened","reportLabel":"ClickURL","destinationUrl":"https://ad.doubleclick.net/ddm/trackclk/N1545905.3111044BLISUSAINC/B28909766.351494887;dc_trk_aid=542960863;dc_trk_cid=182065842;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=","destination":{"url":"https://ad.doubleclick.net/ddm/trackclk/N1545905.3111044BLISUSAINC/B28909766.351494887;dc_trk_aid=542960863;dc_trk_cid=182065842;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=","clazz":"Fixed"},"impressionUrl":null}],"dynamicContent":[],"moatCustomAttributes":{},"admarvel_format":null,"overrides":{"placementId":"1856987f","customAudiences":{},"derivedAudiences":{},"deviceInfo":{"deviceType":"Desktop","primaryHardwareType":"desktop","mobileDevice":false,"osName":"Windows","osVersion":"10","platform":"DesktopPlatform","platformVersion":null,"browserName":"Edge","browserVersion":"107.0.1418.62","browserRenderingEngine":"Blink","vendor":null,"model":null},"language":"fr","ipCountryCode":"FR","ipRegionCode":null,"ipPrincipalSubdivisionCode":"IDF","ipCityGeonameId":"2988507","ipCity":"Paris","weather":{"windy":"0","currentCondition":"fog","apparentTemperature":2.0,"temperature":2.0,"windSpeed":1,"cloudCoverage":100,"conditions":[{"name":"fog","weight":4},{"name":"cloudy","weight":0}]},"clientTimestamp":"1670238647.567","clientTimeZoneOffsetInMinutes":-60},"utSignals":null,"_mraidCheck":null,"fallbackSdk":null,"passthroughParameters":{},"googleMapsClientKey":"AIzaSyDtOoTc6JffQ6dJibMV0tZ-d7YenKdhM1c","shouldShowMapsPrompt":false,"pageSkinsHost":null,"pageSkinsPath":null,"stickToPageHeader":null,"externalAdServer":"BlisMedia","externalCreativeId":"957137","externalCreativeName":null,"externalPlacementId":null,"externalPlacementName":null,"externalSiteId":"15db2b7acd546e12a11a82fc5ef8098171d46caa","externalSiteName":"fandom.com","externalSupplierId":"86","externalSupplierName":null,"externalLineItemId":null,"externalSessionId":null,"externalBundleId":null,"externalCreativeWidth":null,"externalCreativeHeight":null,"externalCampaignId":"559373","externalCampaignName":null,"externalAdvertiserId":null,"externalDestinationUrl":null,"clickUrl":"https://tr.blismedia.com/v1/click/pixel?r=523f13b1-bc6b-bef1-f91c-e66c516c4563&i=1&c=559373&ct=1&b=957137&s=86&cv=1&t=1670238642743294&sn=fandom.com&pn=fandom.com&hc=1&wnet=1670239542&bk=35529&pregs=8&is=www&biid=e8a68c91c6504401bc972b45962e021f&fckb64=MTUxNjY1MTQ0NQ==&fc=b&bet=1672444800&a=SITE","useClickAsDestination":null,"scriptId":"celtra-script-1","firehoseUrl":null,"track.creativeLoads":"https://tr.blismedia.com/v1/impression/pixel?r=523f13b1-bc6b-bef1-f91c-e66c516c4563&i=1&c=559373&ct=1&b=957137&s=86&cv=1&t=1670238642743294&sn=fandom.com&pn=fandom.com&hc=1&wnet=1670239542&bk=35529&pregs=8&is=www&ewh=nCPVC24_zoYdypctklTJTqOuz6pM-EUXxwoluOVkiyE6guspKvxWLu-puxsiLVP7&we=TRACKING_NOTICE&fce=TRACKING_NOTICE&ctrlfc=0&biid=e8a68c91c6504401bc972b45962e021f&fckb64=MTUxNjY1MTQ0NQ==&fc=b&bet=1672444800&a=REQUESTED","track.adLoading":"https://tr.blismedia.com/v1/impression/pixel?r=523f13b1-bc6b-bef1-f91c-e66c516c4563&i=1&c=559373&ct=1&b=957137&s=86&cv=1&t=1670238642743294&sn=fandom.com&pn=fandom.com&hc=1&wnet=1670239542&bk=35529&pregs=8&is=www&ewh=nCPVC24_zoYdypctklTJTqOuz6pM-EUXxwoluOVkiyE6guspKvxWLu-puxsiLVP7&we=TRACKING_NOTICE&fce=TRACKING_NOTICE&ctrlfc=0&biid=e8a68c91c6504401bc972b45962e021f&fckb64=MTUxNjY1MTQ0NQ==&fc=b&bet=1672444800&a=BLIS_FIRE","track.creativeRenders":"https://tr.blismedia.com/v1/impression/pixel?r=523f13b1-bc6b-bef1-f91c-e66c516c4563&i=1&c=559373&ct=1&b=957137&s=86&cv=1&t=1670238642743294&sn=fandom.com&pn=fandom.com&hc=1&wnet=1670239542&bk=35529&pregs=8&is=www&ewh=nCPVC24_zoYdypctklTJTqOuz6pM-EUXxwoluOVkiyE6guspKvxWLu-puxsiLVP7&we=TRACKING_NOTICE&fce=TRACKING_NOTICE&ctrlfc=0&biid=e8a68c91c6504401bc972b45962e021f&fckb64=MTUxNjY1MTQ0NQ==&fc=b&bet=1672444800&a=SHOWN","clickEvent":"advertiser","clickUrlNeedsDest":null,"ncu":null,"firstPage":1,"dataURIsEnabled":0,"monotypeProjectId":"c46ed090-3671-4163-a85b-b06b4038ae38","iosAdvId":null,"iosAdvIdTrackingLimited":null,"androidAdvId":null,"androidAdvIdTrackingLimited":null,"moatRandom":{"first":447641501,"second":381899418},"skipOffset":null,"_enablePoliteLoading":null,"massProductionPreview":null,"fontSubsetterIsDisabled":null,"_politeImageUrl":null,"_politeClickThrough":null,"sticky":null,"_mopubExt":null,"enabledServices":[],"creativeVariantLockSize":null,"screenIdLock":null,"vastVersion":null,"standalonePreview":null,"campaignExplorer":null,"exportingFirstFrame":null,"exportingFrameRate":null,"exportingVideoAssetBlobHash":null,"country":"GB","productCategoryCode":null,"campaignName":"Ray Ban Stories Holiday UK - B-1112006/B-1110787/B-1112008/B-1112009","agencyId":"Blis_Intl","customPartnerAttributeBrandId":null,"suppressCloseButton":null,"preferredClickThroughWindow":"new","expandDirection":"undefined","hostPageLoadId":"7023449533491899"};
+    runtimeParams.overridableClickThroughDestinationUrl = false;
+    runtimeParams.redirectJsClientTimestamp = new Date() / 1000;
+    
+    
+    
+var macros = function (x) {
+    if (x instanceof Array) {
+        return x.map(macros);
+    } else {
+        var macroTags = [
+            ['%%BLIS_BANNER_ID%%', "957137"]
+,['%%CACHEBUSTER%%', (Math.random()+'').slice(2)]
+,['%n', (Math.random()+'').slice(2)]
+,['%s', "https"]
+,['\\{celtraAccountId\\}', "f7bc58a6"]
+,['\\{celtraAgencyId\\}', "Blis_Intl"]
+,['\\{celtraAndroidAdvIdTrackingLimitedBoolStr\\}', ""]
+,['\\{celtraAndroidAdvIdTrackingLimited\\}', ""]
+,['\\{celtraAndroidAdvId\\}', ""]
+,['\\{celtraCampaignId:int\\}', "4224448329"]
+,['\\{celtraCampaignId\\}', "fbcbf749"]
+,['\\{celtraCampaignName\\}', "Ray%20Ban%20Stories%20Holiday%20UK%20-%20B-1112006%2FB-1110787%2FB-1112008%2FB-1112009"]
+,['\\{celtraCountryCode\\}', "GB"]
+,['\\{celtraCreativeId:int\\}', "4200995349"]
+,['\\{celtraCreativeId\\}', "fa661a15"]
+,['\\{celtraCreativeVariant:urlenc\\}', ""]
+,['\\{celtraCreativeVariant\\}', ""]
+,['\\{celtraCustomPartnerAttribute\\[code\\]\\}', ""]
+,['\\{celtraExternalAdServer\\}', "BlisMedia"]
+,['\\{celtraExternalAdvertiserId\\}', ""]
+,['\\{celtraExternalBundleId\\}', ""]
+,['\\{celtraExternalCampaignId\\}', "559373"]
+,['\\{celtraExternalCampaignName\\}', ""]
+,['\\{celtraExternalCreativeId\\}', "957137"]
+,['\\{celtraExternalCreativeName\\}', ""]
+,['\\{celtraExternalDestinationUrl\\}', ""]
+,['\\{celtraExternalLineItemId\\}', ""]
+,['\\{celtraExternalPlacementId\\}', ""]
+,['\\{celtraExternalPlacementName\\}', ""]
+,['\\{celtraExternalSessionId\\}', ""]
+,['\\{celtraExternalSiteId\\}', "15db2b7acd546e12a11a82fc5ef8098171d46caa"]
+,['\\{celtraExternalSiteName\\}', "fandom.com"]
+,['\\{celtraExternalSupplierId\\}', "86"]
+,['\\{celtraExternalSupplierName\\}', ""]
+,['\\{celtraFeedReportLabel\\}', ""]
+,['\\{celtraIosAdvIdTrackingLimitedBoolStr\\}', ""]
+,['\\{celtraIosAdvIdTrackingLimited\\}', ""]
+,['\\{celtraIosAdvId\\}', ""]
+,['\\{celtraPlacementId:int\\}', "408328319"]
+,['\\{celtraPlacementId\\}', "1856987f"]
+,['\\{celtraPlatformAdvIdTrackingLimited\\}', ""]
+,['\\{celtraPlatformAdvId\\}', ""]
+,['\\{celtraProductCategoryCode\\}', ""]
+,['\\{celtraProto\\}', "https"]
+,['\\{celtraRandom\\}', (Math.random()+'').slice(2)]
+,['\\{celtraSessionId\\}', "s1670240199x8ef4540c535c11x41367267"]
+,['\\{celtraSupplierId:int\\}', "2795815027"]
+,['\\{celtraSupplierId\\}', "a6a4c073"]
+
+        ];
+        return macroTags.reduce(function(str, replacementRule, idx, arr) {
+            return str.replace(new RegExp(replacementRule[0], 'ig'), replacementRule[1] ? replacementRule[1] : '');
+        }, x);
+    }
+};
+
+    // Dynamic values that we do not want to pass forward in urls,
+    // so we look them up on every page request based on runtimeParams
+    var urlOpenedOverrideUrls = {"ClickURL":"https://ad.doubleclick.net/ddm/trackclk/N1545905.3111044BLISUSAINC/B28909766.351494887;dc_trk_aid=542960863;dc_trk_cid=182065842;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd="};
+    var storeOpenedOverrideUrls = {};
+    var urlOpenedUrlAppendage = "";
+    var clickThroughDestinationUrl = null;
+
+    // Less dynamic values for payload request
+    var payloadBase = "https://cache-ssl.celtra.com/api/creatives/fa661a15/compiled/web.js";
+    var cacheParams = {"v": "9-77ffa3ce69", "secure": 1, "cachedVariantChoices": "W10-", "isPurposePreview": 0, "eventMetadataExperiment": 'newMeta', "inmobi": typeof imraid !== 'undefined' && typeof _im_imai !== 'undefined' ? '1' : '0'};
+
+    
+    var trackers = (function() {
+    return [
+        // 3rd-party tracker (regular)
+function(event) {
+    if (event.name == 'adLoading')
+        return {urls: macros(["https://tr.blismedia.com/v1/impression/pixel?r=523f13b1-bc6b-bef1-f91c-e66c516c4563&i=1&c=559373&ct=1&b=957137&s=86&cv=1&t=1670238642743294&sn=fandom.com&pn=fandom.com&hc=1&wnet=1670239542&bk=35529&pregs=8&is=www&ewh=nCPVC24_zoYdypctklTJTqOuz6pM-EUXxwoluOVkiyE6guspKvxWLu-puxsiLVP7&we=TRACKING_NOTICE&fce=TRACKING_NOTICE&ctrlfc=0&biid=e8a68c91c6504401bc972b45962e021f&fckb64=MTUxNjY1MTQ0NQ==&fc=b&bet=1672444800&a=BLIS_FIRE"])};
+
+    if (event.name == 'firstInteraction')
+        return {urls: macros([])};
+
+    if (event.name == 'creativeLoaded')
+        return {urls: macros(["https://ad.doubleclick.net/ddm/trackimp/N1545905.3111044BLISUSAINC/B28909766.351494887;dc_trk_aid=542960863;dc_trk_cid=182065842;ord=%n;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=?","https://tr.blismedia.com/v1/impression/pixel?r=523f13b1-bc6b-bef1-f91c-e66c516c4563&i=1&c=559373&ct=1&b=957137&s=86&cv=1&t=1670238642743294&sn=fandom.com&pn=fandom.com&hc=1&wnet=1670239542&bk=35529&pregs=8&is=www&ewh=nCPVC24_zoYdypctklTJTqOuz6pM-EUXxwoluOVkiyE6guspKvxWLu-puxsiLVP7&we=TRACKING_NOTICE&fce=TRACKING_NOTICE&ctrlfc=0&biid=e8a68c91c6504401bc972b45962e021f&fckb64=MTUxNjY1MTQ0NQ==&fc=b&bet=1672444800&a=REQUESTED"])};
+
+    if (event.name == 'creativeRendered')
+        return {urls: macros(["https://tr.blismedia.com/v1/impression/pixel?r=523f13b1-bc6b-bef1-f91c-e66c516c4563&i=1&c=559373&ct=1&b=957137&s=86&cv=1&t=1670238642743294&sn=fandom.com&pn=fandom.com&hc=1&wnet=1670239542&bk=35529&pregs=8&is=www&ewh=nCPVC24_zoYdypctklTJTqOuz6pM-EUXxwoluOVkiyE6guspKvxWLu-puxsiLVP7&we=TRACKING_NOTICE&fce=TRACKING_NOTICE&ctrlfc=0&biid=e8a68c91c6504401bc972b45962e021f&fckb64=MTUxNjY1MTQ0NQ==&fc=b&bet=1672444800&a=SHOWN"])};
+
+    if (event.name == 'viewable00')
+        return {urls: macros([])};
+
+    if (event.name == 'viewable501')
+        return {urls: macros([])};
+
+    if (event.name == 'expandRequested')
+        return {urls: macros([])};
+
+    if (event.name == 'videoPlayInitiated')
+        return {urls: macros([])};
+
+    if (event.clazz === "MasterVideo") {
+        if (event.name == 'videoStart')
+            return {urls: macros([])};
+
+        if (event.name == 'videoFirstQuartile')
+            return {urls: macros([])};
+
+        if (event.name == 'videoMidpoint')
+            return {urls: macros([])};
+
+        if (event.name == 'videoThirdQuartile')
+            return {urls: macros([])};
+
+        if (event.name == 'videoComplete')
+            return {urls: macros([])};
+    }
+
+    if (event.name == 'videoPause')
+        return {urls: macros([])};
+
+    if (event.name == 'videoMuted')
+        return {urls: macros([])};
+
+    if (event.name == 'videoUnmuted')
+        return {urls: macros([])};
+
+    if (event.name == 'custom')
+        return {urls: macros({}[event.label] || [])};
+
+    if (event.name == 'urlOpened')
+        return {urls: macros({}[event.label] || [])};
+
+    if (event.name == 'storeOpened')
+        return {urls: macros({}[event.label] || [])};
+},
+// 3rd-party tracker (click regular)
+function(event) {
+    if (event.name === "firstInteraction")
+        return {urls: macros([]), events: [{name: 'click'}] };
+},
+// Ad server tracker
+function(event) {
+    if (event.name === "firstInteraction")
+        return {urls: macros(["https://tr.blismedia.com/v1/click/pixel?r=523f13b1-bc6b-bef1-f91c-e66c516c4563&i=1&c=559373&ct=1&b=957137&s=86&cv=1&t=1670238642743294&sn=fandom.com&pn=fandom.com&hc=1&wnet=1670239542&bk=35529&pregs=8&is=www&biid=e8a68c91c6504401bc972b45962e021f&fckb64=MTUxNjY1MTQ0NQ==&fc=b&bet=1672444800&a=SITE"]), events: [{name: 'clickReportedToSupplier'}] };
+}
+    ]
+})();
+    trackers.urlsAndEventsFor = function(event) {
+        return this.reduce(function(acc, tracker) {
+            var ue = tracker(event) || {};
+            return {
+                urls:   acc.urls.concat(ue.urls || []),
+                events: acc.events.concat(ue.events || [])
+            };
+        }, {urls: [], events: []});
+    };
+       
+
+    
+var adLoadingEvent = {"name":"adLoading","sessionId":"s1670240199x8ef4540c535c11x41367267"};
+adLoadingEvent.clientTimestamp = new Date/1000;
+
+trackers.urlsAndEventsFor(adLoadingEvent).urls.forEach(function(url) {
+    // On IE 8+ URLs containing '%' character sometimes throw an error and
+    // stop current JS run loop. One solution  would be to look for that
+    // and replace it with '%25', but we've decided not to modify incoming
+    // URLs, because this issue is really a combination of two external
+    // problems: broken URL on a buggy browser.
+    // https://celtra.atlassian.net/browse/MAB-4476
+    try {
+        var img = new Image;
+        
+        img.src = url;
+    } catch(e) {}
+});
+    
+
+    
+(function () {
+    runtimeParams.protoLoading = {};
+
+    var base64img = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4wEKCBsN103sxwAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAC0lEQVQI12NgAAIAAAUAAeImBZsAAAAASUVORK5CYII=";
+
+    runtimeParams.protoLoading.dataLoadStatus = null;
+    // Test if CSP is blocking "data:" source for images
+    var dataImg = new Image();
+    dataImg.onload = function() {
+        runtimeParams.protoLoading.dataLoadStatus = "supported";
+    };
+    dataImg.onerror = function(e) {
+        runtimeParams.protoLoading.dataLoadStatus = "blocked";
+    };
+    dataImg.src = "data:image/png;base64," + base64img;
+
+    runtimeParams.protoLoading.blobLoadStatus = null;
+    // Test if CSP is blocking "blob:" source for images
+    var url = null;
+    try {
+        var binaryImg = atob(base64img);
+        var length = binaryImg.length;
+        var ab = new ArrayBuffer(length);
+        var ua = new Uint8Array(ab);
+        for (var i = 0; i < length; i++) {
+            ua[i] = binaryImg.charCodeAt(i);
+        }
+        var blob = new Blob([ab], {type: 'image/png'});
+        url = URL.createObjectURL(blob);
+    } catch(error) {
+        runtimeParams.protoLoading.blobLoadStatus = "error";
+        runtimeParams.protoLoading.blobErrorMessage = error.name + ': ' + error.message;
+        return;
+    }
+    var blobImg = new Image();
+    blobImg.onload = function() {
+        runtimeParams.protoLoading.blobLoadStatus = "supported";
+        URL.revokeObjectURL(url);
+    };
+    blobImg.onerror = function(e) {
+        runtimeParams.protoLoading.blobLoadStatus = "blocked";
+    };
+    blobImg.src = url;
+})();
+    
+
+    function buildPayloadUrl(payloadBase) {
+      var pairs = [];
+      for (var k in cacheParams)
+          pairs.push(encodeURIComponent(k) + '=' + encodeURIComponent(cacheParams[k]));
+      return payloadBase + '?' + pairs.join('&');
+    }
+
+    var payloadUrl = buildPayloadUrl(payloadBase);
+
+    
+// Request and run payload
+var payload = document.createElement('script');
+payload.src = payloadUrl;
+payload.onload = function() {
+
+runtimeParams.payloadJsClientTimestamp = new Date() / 1000;
+window.celtraDeviceInfoRuntimeParams = runtimeParams.deviceInfo;
+window.celtra.payloads[payloadUrl](script, runtimeParams, trackers, urlOpenedOverrideUrls, storeOpenedOverrideUrls, macros, urlOpenedUrlAppendage, clickThroughDestinationUrl);
+    
+};
+script.parentNode.insertBefore(payload, script.nextSibling);
+    
+    
+    
+    
+})();
+  
